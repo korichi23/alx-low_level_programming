@@ -16,6 +16,8 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
+		else
+			putchar('$');
 		d++;
 	}
 	return (0);
