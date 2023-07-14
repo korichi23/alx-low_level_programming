@@ -17,7 +17,7 @@ int main(void)
 			putchar(' ');
 		}
 		else
-			putchar('$');
+			putchar(' ');
 		d++;
 	}
 	return (0);
