@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main"
+#include "main.h"
 /**
  * print_sign - finction
  * Decreption:prints the sign of a number
