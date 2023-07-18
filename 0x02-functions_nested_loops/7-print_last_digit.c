@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib>
+#include <stdlib.h>
 /**
  * print_last_digit - function
  * Descreption: prints the last digit of a number
