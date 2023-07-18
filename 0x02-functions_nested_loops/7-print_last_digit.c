@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * print_last_digit - function
  * Descreption: prints the last digit of a number
