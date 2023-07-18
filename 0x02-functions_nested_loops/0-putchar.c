@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <main.h>
 /**
  * main- entry point
  * Descreption: a program that prints _putchar
@@ -6,6 +7,11 @@
  */
 int main(void)
 {
-	puts("_putchar");
+	char str[] = "_putchar";
+	int char;
+
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
 	return (0);
 }
