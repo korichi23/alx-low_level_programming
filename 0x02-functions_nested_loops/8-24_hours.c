@@ -24,11 +24,11 @@ void jack_bauer(void)
 				m1 = 0;
 				while (m1 < 10)
 				{
-					_putchar(h2);
-					_putchar(h1);
+					_putchar(h2 + '0');
+					_putchar(h1 + '0');
 					_putchar(':');
-					_putchar(m2);
-					_putchar(m1);
+					_putchar(m2 + '0');
+					_putchar(m1 + '0');
 					_putchar('\n');
 					m1++;
 				}
