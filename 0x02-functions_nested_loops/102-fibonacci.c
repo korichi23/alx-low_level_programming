@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int fib, fib1 = 0, fib2 = 1;
+	unsigned long long int fib;
+	int fib1 = 0, fib2 = 1;
 	int i = 0;
 
 	while (i < 50)
@@ -14,7 +15,8 @@ int main(void)
 		fib = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fib;
-		printf("%d, ", fib);
+		printf("%llu, ", fib);
+		i++;
 	}
 	puts("\n");
 	return (0);
