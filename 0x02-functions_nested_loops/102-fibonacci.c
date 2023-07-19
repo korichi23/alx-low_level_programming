@@ -16,9 +16,12 @@ int main(void)
 		fib = fib1 + fib2;
 		fib1 = fib2;
 		fib2 = fib;
-		printf("%lu, ", fib);
+		printf("%lu", fib);
 		i++;
+		if (i == 49)
+			puts("\n");
+		else
+			puts(", ");
 	}
-	puts("\n");
 	return (0);
 }
