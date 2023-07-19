@@ -11,7 +11,7 @@ int main(void)
 	unsigned long int fib2 = 1;
 	int i = 0;
 
-	while (i < 50)
+	while (1)
 	{
 		fib = fib1 + fib2;
 		fib1 = fib2;
@@ -19,9 +19,9 @@ int main(void)
 		printf("%lu", fib);
 		i++;
 		if (i == 49)
-			puts("\n");
-		else
-			puts(", ");
+			break;
+		puts(", ");
 	}
+	puts('\n');
 	return (0);
 }
