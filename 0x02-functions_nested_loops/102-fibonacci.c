@@ -7,7 +7,8 @@
 int main(void)
 {
 	unsigned long int fib;
-	int fib1 = 0, fib2 = 1;
+	unsigned long int fib1 = 0;
+	unsigned long int fib2 = 1;
 	int i = 0;
 
 	while (i < 50)
