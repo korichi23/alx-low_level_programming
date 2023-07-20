@@ -20,4 +20,5 @@ int main(void)
 			printf("%d ", i);
 	}
 	puts("\n");
+	return (0);
 }
