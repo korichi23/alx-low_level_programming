@@ -2,13 +2,17 @@
 /**
  * print_line - function
  * Descreption:draws a straight line
+ * @n: parameter
  * Return: void function
  */
 void print_line(int n)
 {
-	while (n > 0)
+	if (n > 0)
 	{
-		_putchar('_');
+		while (n > 0)
+		{
+			_putchar('_');
+		}
 	}
 	_putchar('\n');
 }
