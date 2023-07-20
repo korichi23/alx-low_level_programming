@@ -1,4 +1,4 @@
-#incluce "main.h"
+#include "main.h"
 /**
  * print_most_numbers - function
  * Descreption: prints the numbers except 2,4
