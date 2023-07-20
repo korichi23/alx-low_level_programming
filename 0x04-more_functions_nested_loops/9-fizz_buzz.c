@@ -1,0 +1,23 @@
+#include "main.h"
+/**
+ * main- entry point
+ * Descreption:Fizz-Buzz test
+ * Return: 0 for success
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 && i % 5)
+			puts("FizzBuzz ");
+		else if (i % 3)
+			puts("Fizz ");
+		else if (i % 5)
+			puts("Buzz ");
+		else
+			printf("%d ", i);
+	}
+	puts("\n");
+}
