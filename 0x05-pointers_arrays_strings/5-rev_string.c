@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * rev_string - function
  * Descreption:reverses a string.
