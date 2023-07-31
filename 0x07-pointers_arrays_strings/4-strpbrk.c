@@ -9,6 +9,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
+	int match = 0;
 	while(*s)
 	{
 		while (*accept)
