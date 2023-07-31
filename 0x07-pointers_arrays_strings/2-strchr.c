@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stddef.h>
 /**
  * _strchr - function
  * @s:first par
