@@ -18,15 +18,10 @@ char *_strpbrk(char *s, char *accept)
 		while (*accept)
 		{
 			if(*s == *accept)
-			{
-				match = 1;
-				break;
-			}
+				return (s);
 			++accept;
 		}
-		if (match)
-			break;
 		++s;
 	}
-	return (s);
+	return (0);
 }
