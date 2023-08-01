@@ -10,8 +10,11 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int match = 0;
+	char *tmp = accept;
+
 	while(*s)
 	{
+		accept = tmp;
 		while (*accept)
 		{
 			if(*s == *accept)
