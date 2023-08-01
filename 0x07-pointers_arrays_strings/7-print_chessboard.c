@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * print_chessboard - function
  * @*a)[8]:par
@@ -13,9 +12,9 @@ void print_chessboard(char (*a)[8])
 	{
 		while (*a[i])
 		{
-			printf("%c", *a[i]);
+			_putchar(*a[i]);
 			++a[i];
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
