@@ -9,7 +9,7 @@
 int check_prime(int n, int val);
 int is_prime_number(int n)
 {
-	return (n, 2);
+	return (check_prime(n, 2));
 }
 /**
  * check_prime - helper function
