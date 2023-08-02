@@ -2,6 +2,7 @@
 /**
  * _sqrt_recursion - function
  * @n:par
+ * @val:par
  * Return:int
  */
 int square(int n, int val);
@@ -13,15 +14,14 @@ int _sqrt_recursion(int n)
  * square - helper function
  * @n:first par
  * @val:second par
- * Return :int
- *
+ * Return:square root number
  */
 int square(int n, int val)
 {
 	if (val * val == n)
 		return (val);
 	else if (val * val < n)
-		return (square(n, (val + 1));
+		return (square(n, (val + 1)));
 	else
 		return (-1);
 }
