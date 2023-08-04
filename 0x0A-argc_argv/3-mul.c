@@ -14,9 +14,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	int n1 = atoi(argv[1]);
-        int n2 = atoi(argv[2]);
-
-	printf("%d\n", n1 * n2);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
