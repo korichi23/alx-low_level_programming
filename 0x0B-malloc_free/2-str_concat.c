@@ -9,26 +9,18 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *str, *temp;
-	int len;
+	char *str;
+	int len1, len2;
 
-	len = strlen(s1) + strlen(s2) + 1;
-	str = (char *)malloc(sizeof(char) * len);
+	len1 = (s1 != NULL) ? strlen(s1) : 0;
+	len2 = (s2 != NULL) ? strlen(s2) : 0;
+	str = (char *)malloc(len1 + len2 + 1);
 	if (!str)
 		return (NULL);
-	temp = str;
-	while (s1 != NULL)
-	{
-		*str = *s1;
-		str++;
-		s1++;
 	}
-	while (s2 != NULL)
-	{
-		*str = *s2;
-		str++;
-		s2++;
-	}
-	*str = '\0';
-	return (temp);
+	if (s1 != NULL)
+		strcpy(str, s1);
+	if (s2 != NULL)
+		strcpy(str, s2);
+	return (str);
 }
