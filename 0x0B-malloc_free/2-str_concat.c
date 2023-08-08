@@ -18,6 +18,10 @@ char *str_concat(char *s1, char *s2)
 	if (!str)
 		return (NULL);
 	temp = str;
+	if (s1 == NULL)
+		s1 = '\0';
+	if (s2 == NULL)
+		s2 = '\0';
 	if (*s1)
 		strcpy(str, s1);
 	if (*s2)
