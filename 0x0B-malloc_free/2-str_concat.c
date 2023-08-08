@@ -18,9 +18,9 @@ char *str_concat(char *s1, char *s2)
 	if (!str)
 		return (NULL);
 	temp = str;
-	if (s1 != NULL)
+	if (*s1)
 		strcpy(str, s1);
-	if (s2 != NULL)
+	if (*s2)
 		strcpy(str, s2);
 	return (temp);
 }
