@@ -17,10 +17,11 @@ char *create_array(unsigned int size, char c)
 	if (!ptr)
 		return (NULL);
 	temp = ptr;
-	while (*ptr)
+	while (size)
 	{
 		*ptr = c;
 		ptr++;
+		size--;
 	}
 	return (temp);
 }
