@@ -17,13 +17,13 @@ char *str_concat(char *s1, char *s2)
 	if (!str)
 		return (NULL);
 	temp = str;
-	while (*s1)
+	while (s1 != NULL)
 	{
 		*str = *s1;
 		str++;
 		s1++;
 	}
-	while (*s2)
+	while (s2 != NULL)
 	{
 		*str = *s2;
 		str++;
