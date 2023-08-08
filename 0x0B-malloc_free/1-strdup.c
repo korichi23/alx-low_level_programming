@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - function
  * @str:par
@@ -8,7 +9,7 @@ char *_strdup(char *str)
 {
 	char *s, *temp;
 
-	s = (char *)malloc(sizeof(str))
+	s = (char *)malloc(sizeof(str));
 	if (!s)
 		return (NULL);
 	temp = str;
