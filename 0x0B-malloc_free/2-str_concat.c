@@ -24,6 +24,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = '\0';
 	if (*s1)
 		strcpy(str, s1);
+	str += len1;
 	if (*s2)
 		strcpy(str, s2);
 	return (temp);
