@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib>h>
+#include <stdlib.h>
 /**
  * free_grid - function
  * @grid:par1
