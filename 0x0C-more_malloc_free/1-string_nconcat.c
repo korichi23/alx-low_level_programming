@@ -11,12 +11,15 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int len = strlen(s1) + n;
+	int len1 = strlen(s1), len2 = strlen(s2);
 
-	str = (char *)malloc(len + 1);
+	if (n > len2)
+		n = len2;
+	str = (char *)malloc(len1 + n + 1);
 	if (str == NULL)
 		return (NULL);
-	str = strncat(s1, s2, n);
-	str[len] = '\0';
+	strncat(str, s1, len1);
+	strncat(str, s2, n);
+	str[len1 + n] = '\0';
 	return (str);
 }
