@@ -4,20 +4,30 @@
 #include <ctype.c>
 /**
  * main - entry point
+ * @argc:par1
+ * @argv:par2
  * Return:0 for success
  */
-int main(int argc, char **agrv)
+int main(int argc, char **argv)
 {
 	int n1, n2;
+	int i, j;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (!isdigit(argv[1]) || !isdigit(argv[2]))
+	for (i = 0; i <= 2; i++)
 	{
-		printf("Error\n");
-                exit(98);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				exit(98);
+			}
+		}
 	}
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
