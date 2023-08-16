@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
  * array_iterator - function
  * @array:par1
@@ -9,7 +10,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	if (array && action)
 	{
-		int i;
+		size_t i;
 	
 		for (i = 0; i < size; i++)
 		{
