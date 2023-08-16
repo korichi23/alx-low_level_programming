@@ -1,4 +1,3 @@
-#include "function_pointer.h"
 /**
  * print_name - function
  * @name:par1
