@@ -1,4 +1,5 @@
-#include "list.h"
+#include "lists.h"
+#include <stdlib.h>
 /**
  * list_len -  returns the number of elements in  list_t
  * @h:the head
