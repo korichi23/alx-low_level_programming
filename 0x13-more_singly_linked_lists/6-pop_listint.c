@@ -4,7 +4,7 @@
 /**
  *pop_listint - deletes the head node of a listint_t
  *@head:pointer
- *@Return:the head node’s data (n).
+ *Return:int
  */
 int pop_listint(listint_t **head)
 {
